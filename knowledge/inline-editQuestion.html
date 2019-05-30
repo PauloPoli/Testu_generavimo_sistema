@@ -1,0 +1,16 @@
+<div>
+        <span ng-mouseenter="showEdit = true" ng-mouseleave="showEdit = false">
+                <div class="button-input-wrapper">
+                        <input class="name-and-description question-box" type="text" ng-model="model.Question_Title"  placeholder="Pavadinimas">
+                        <div class="input-btn delete-btn" ng-click="toDeleteQuestion(model.id, model.fk_test)">
+                                <img src="app_css/app_image/trash.svg" class="center">
+                        </div>
+                </div>
+                <a ng-show="showEdit" ng-click="edit()">edit</a> 
+                <div ng-show="editMode" class="select-wrapper">
+                        <select ng-model="model.Type" ng-options="Type for Type in model" ng-change="questionTypeChange(model.Type)"></select>
+                </div>
+                <button ng-click="cancel()" ng-show="editMode">cancel</button>
+                <button ng-click="save()" ng-show="editMode">save</button>
+        </span>  
+</div>

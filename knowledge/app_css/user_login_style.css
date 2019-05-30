@@ -1,0 +1,107 @@
+
+.background {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 93%;
+    max-width: 466px;
+    height: 698px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    margin-top: 108px;
+    margin-bottom: 153px;
+}
+body {
+    background: #F5F7F9;
+}
+.login-form-title {
+    width: 93%;
+    max-width: 466px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 44px;
+    color: #545454;
+    float: right;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.login_button{
+    cursor: pointer;
+    background: #1761AB;
+    border-color: #0054A6;
+    border-width: 0px;
+    border-radius: 100px;
+    width: 200px;
+    height: 50px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+   
+}
+label {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 24px;
+    color: #6C6C6C;
+    padding-bottom: 5px;
+}
+.form_input {
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #D7DADF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-indent: 80px;
+    margin-top: 5px
+}
+.form-icon-background {
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 48px;
+    background: #1761AB;
+    border-radius: 8px;
+
+}
+
+.form-icon-background.email_icon{
+    position: absolute;
+    top: 42px;
+    left: 0px;
+}
+.form-icon-background.password_icon{
+    position: absolute;
+    top: 181px;
+    left: 0px;
+}
+
+.userInputs{
+    position: relative;
+    width: 86%;
+    margin-bottom: 153px;
+}
+.form_input.email{
+    margin-bottom: 48px;
+}

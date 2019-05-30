@@ -1,0 +1,20 @@
+<div>
+
+        <span ng-mouseenter="showEdit = true" ng-mouseleave="showEdit = false">
+                <label class="quiz-infolabel-font" >Atsakymo variantas</label>
+                <div class="button-input-wrapper question-wrapper">
+                        <input  class="name-and-description question-box" type="text" ng-model=model.Answer placeholder="Pavadinimas" >
+                        <div class="input-btn remove-btn" ng-click="toDeleteAnswer(model.id)">
+                                <img src="app_css/app_image/minus.svg"  class="center">
+                        </div>      
+                        <label class="container-checkbox answer-checkbox input-text-font"><div class="is-correct-text">Teisingas</div> 
+                                <input type="checkbox" ng-model="model.Is_true" ng-true-value=1 ng-false-value=0>
+                                
+                                <span class="checkmark answer-checkmark"></span>
+                        </label>
+                </div> 
+          <a ng-show="showEdit" ng-click="edit()">edit</a>
+        </span>
+        <button ng-click="cancel()" ng-show="editMode">cancel</button>
+        <button ng-click="save()" ng-show="editMode">save</button>
+</div>

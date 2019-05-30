@@ -1,0 +1,17 @@
+<td class="first-row-mainpage">
+        <input ng-model = "model.Title" ng-show="editMode">
+        <span ng-hide="editMode">{{model.Title}}</span>
+        <button ng-click="cancel()" ng-show="editMode">cancel</button>
+        <button ng-click="save()" ng-show="editMode">save</button>
+</td>
+<td class="grey-table-row-mainpage"> 
+        <div class=option-buttons>
+                <img src="app_css/app_image/edit.svg" ng-click ="edit()">
+                <img src="app_css/app_image/eye.svg" ui-sref="editTest({ id: model.id })">
+                <img src="app_css/app_image/delete.svg" ng-click ="toDeleteTest(model.id)">
+        </div>
+</td>
+<div>
+        <span ng-mouseenter="showEdit = true" ng-mouseleave="showEdit = false">
+        </span>
+</div>

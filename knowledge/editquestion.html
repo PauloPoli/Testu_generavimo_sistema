@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kategorijų redagavimas</title>
+</head>
+
+<body>
+        <div class="Teltonika_logo_bar"></div>
+        <div class="window-background">
+                        
+                <div class="meniu-bar">
+                        <div class="clock-box">
+                                <svg style="margin: auto;" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 0C3.35685 0 0 3.35685 0 7.5C0 11.6431 3.35685 15 7.5 15C11.6431 15 15 11.6431 15 7.5C15 3.35685 11.6431 0 7.5 0ZM7.5 13.5484C4.15827 13.5484 1.45161 10.8417 1.45161 7.5C1.45161 4.15827 4.15827 1.45161 7.5 1.45161C10.8417 1.45161 13.5484 4.15827 13.5484 7.5C13.5484 10.8417 10.8417 13.5484 7.5 13.5484ZM9.36895 10.3911L6.80141 8.5252C6.70766 8.45564 6.65323 8.34677 6.65323 8.23186V3.26613C6.65323 3.06653 6.81653 2.90323 7.01613 2.90323H7.98387C8.18347 2.90323 8.34677 3.06653 8.34677 3.26613V7.55141L10.3669 9.02117C10.5302 9.13911 10.5635 9.36593 10.4456 9.52923L9.87702 10.3125C9.75907 10.4728 9.53226 10.5091 9.36895 10.3911Z" fill="#8A8A8A"/>
+                                </svg>
+                                        <div class="text-style">{{date | date:'hh:mm'}}</div>
+                        </div>
+                        <div class="user-welcome-box">
+                                <img src="app_css/app_image/user_icon.png"  height="60" width="60">
+                                <div class="text-style">Sveiki, Admin</div>
+                        </div>
+                        <div class="home-box" ui-sref="home">
+
+                                        <div class=" home-text">
+                                            <svg style="margin-right: 15%;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.5 7L12 2L21.5 7V9H2.5V7ZM12 4.26001L17.2101 7H6.79004L12 4.26001ZM5 11H7V18H5V11ZM13 11V18H11V11H13ZM2.5 20V22H21.5V20H2.5ZM17 11H19V18H17V11Z" fill="#1761AB"/>
+                                            </svg>  Kategorijos</div>
+                            </div>
+                            <div class="home-box" ui-sref="generateTest">
+            
+                                    <div class=" home-text">
+                                            <svg style="margin-right: 15%;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.5022 12C19.5022 12.34 19.4722 12.66 19.4321 12.98L21.5421 14.63C21.7322 14.78 21.7821 15.05 21.6621 15.27L19.6621 18.73C19.5721 18.89 19.4021 18.98 19.2322 18.98C19.1721 18.98 19.1122 18.97 19.0521 18.95L16.5621 17.95C16.0421 18.34 15.4822 18.68 14.8722 18.93L14.4922 21.58C14.4622 21.82 14.2522 22 14.0022 22H10.0022C9.7522 22 9.54211 21.82 9.51221 21.58L9.1322 18.93C8.52222 18.68 7.96216 18.35 7.44214 17.95L4.95215 18.95C4.9021 18.97 4.84216 18.98 4.7821 18.98C4.60217 18.98 4.43213 18.89 4.34216 18.73L2.34216 15.27C2.22217 15.05 2.27222 14.78 2.46216 14.63L4.57214 12.98C4.5321 12.66 4.5022 12.33 4.5022 12C4.5022 11.67 4.5321 11.34 4.57214 11.02L2.46216 9.37C2.27222 9.22 2.21216 8.95001 2.34216 8.73001L4.34216 5.26999C4.43213 5.10999 4.60217 5.01999 4.77222 5.01999C4.83215 5.01999 4.89221 5.03 4.95215 5.04999L7.44214 6.04999C7.96216 5.66 8.52222 5.32001 9.1322 5.07001L9.51221 2.42001C9.54211 2.17999 9.7522 2 10.0022 2H14.0022C14.2522 2 14.4622 2.17999 14.4922 2.42001L14.8722 5.07001C15.4822 5.32001 16.0421 5.64999 16.5621 6.04999L19.0521 5.04999C19.1022 5.03 19.1621 5.01999 19.2222 5.01999C19.4021 5.01999 19.5721 5.10999 19.6621 5.26999L21.6621 8.73001C21.7821 8.95001 21.7322 9.22 21.5421 9.37L19.4321 11.02C19.4722 11.34 19.5022 11.66 19.5022 12ZM17.5022 12C17.5022 11.79 17.4922 11.58 17.4521 11.27L17.3121 10.14L18.2021 9.44L19.2722 8.59L18.5721 7.38L17.3021 7.89001L16.2422 8.32001L15.3322 7.62C14.9321 7.32001 14.5322 7.09 14.1022 6.91L13.0421 6.48001L12.8822 5.35001L12.6921 4H11.3021L11.1022 5.35001L10.9421 6.48001L9.8822 6.91C9.47217 7.07999 9.06213 7.32001 8.6322 7.64001L7.73218 8.32001L6.69214 7.89999L5.42212 7.39001L4.72217 8.60001L5.80212 9.44L6.69214 10.14L6.55212 11.27C6.52222 11.57 6.5022 11.8 6.5022 12C6.5022 12.2 6.52222 12.43 6.55212 12.74L6.69214 13.87L5.80212 14.57L4.72217 15.41L5.42212 16.62L6.69214 16.11L7.7522 15.68L8.66211 16.38C9.06213 16.68 9.46216 16.91 9.89221 17.09L10.9521 17.52L11.1122 18.65L11.3021 20H12.7021L12.9022 18.65L13.0621 17.52L14.1222 17.09C14.5322 16.92 14.9421 16.68 15.3722 16.36L16.2722 15.68L17.3121 16.1L18.5822 16.61L19.2822 15.4L18.2021 14.56L17.3121 13.86L17.4521 12.73C17.4822 12.43 17.5022 12.21 17.5022 12ZM12.0022 8C9.79224 8 8.0022 9.79001 8.0022 12C8.0022 14.21 9.79224 16 12.0022 16C14.2122 16 16.0022 14.21 16.0022 12C16.0022 9.79001 14.2122 8 12.0022 8ZM10.0022 12C10.0022 13.1 10.9022 14 12.0022 14C13.1022 14 14.0022 13.1 14.0022 12C14.0022 10.9 13.1022 10 12.0022 10C10.9022 10 10.0022 10.9 10.0022 12Z" fill="#1761AB"/>                                       
+                                            </svg>  Generavimo nustatymai</div>
+                            </div>
+                            <div class="home-box" ng-click="backtoMain();">
+            
+                                    <div class=" home-text">
+                                            <svg style="margin-right: 15%;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.8199 4H19C20.1 4 21 4.89999 21 6V20C21 21.1 20.1 22 19 22H5C4.85999 22 4.72998 21.99 4.59998 21.97C4.20996 21.89 3.85999 21.69 3.58997 21.42C3.41003 21.23 3.26001 21.02 3.16003 20.78C3.06006 20.54 3 20.27 3 20V6C3 5.72 3.06006 5.45999 3.16003 5.23001C3.26001 4.98999 3.41003 4.76999 3.58997 4.59C3.85999 4.32001 4.20996 4.12 4.59998 4.04001C4.72998 4.01001 4.85999 4 5 4H9.18005C9.59998 2.84 10.7 2 12 2C13.3 2 14.4 2.84 14.8199 4ZM7 10V8H17V10H7ZM17 14V12H7V14H17ZM14 16H7V18H14V16ZM12 3.75C12.41 3.75 12.75 4.09 12.75 4.5C12.75 4.91 12.41 5.25 12 5.25C11.59 5.25 11.25 4.91 11.25 4.5C11.25 4.09 11.59 3.75 12 3.75ZM5 20H19V6H5V20Z" fill="#1761AB"/>
+                                            </svg>  Testai</div>
+                            </div>
+
+                </div> <!--meniu-bar-->
+
+             <div class="main-view-container">
+                <div class="quiz-creation-title">Kategorijų redagavimas
+                                <button class="btn-back" ng-click="backtoeditCategory(testData.fk_test)"><svg style=" position: absolute;top: 9px;right: 153px;" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3706 23.3255L13.1319 24.5964C12.6074 25.1345 11.7593 25.1345 11.2404 24.5964L0.393371 13.4732C-0.131124 12.9351 -0.131124 12.0649 0.393371 11.5325L11.2404 0.403595C11.7649 -0.134532 12.613 -0.134532 13.1319 0.403595L14.3706 1.67449C14.9007 2.21834 14.8895 3.10568 14.3483 3.63808L7.62471 10.2101H23.6609C24.403 10.2101 25 10.8226 25 11.584V13.416C25 14.1774 24.403 14.7899 23.6609 14.7899H7.62471L14.3483 21.3619C14.8951 21.8943 14.9063 22.7817 14.3706 23.3255Z" fill="white"/></svg>Atgal</button>
+
+                </div>
+
+                <div class="quiz-questions-container">
+                        <div class="quiz-settings-info-form " >                                 
+                                        <label class="quiz-infolabel-font" for="fname">Klausimas</label>
+                                        <div class="editModeforQuestion" inline-edit-question="testData" on-save="toEditQuestion(testData.id, testData.Question_Title, testData.Type)" on-cancel="cancelEdit(testData.id, testData.Question_Title, testData.Type)">
+                                        </div>
+                                <ul class="sub-menu">
+                                                                       
+                                        <div ng-repeat="answer in testData.Answers as child" inline-edit="answer" on-save="toEditAnswer(answer.Answer, answer.id, answer.Is_true)" on-cancel="cancelEdit(answer.id, answer.Answer, answer.Is_true)">
+                                        </div>
+                                        <div class="add-answer-template" inline-post-answer="answer" on-save="toPostAnswer(answer.Answer, questionID, answer.Is_true)" on-cancel="cancelEdit()">
+
+                                        </div>
+                                        <hr class="line1"/>                                              
+                                </ul>
+                                    
+                        </div> <!--quiz-settings-info-form-->
+                </div> <!--quiz-questions-container-->
+            </div> <!--main-view-container-->
+
+        </div>    <!--window-background-->
+
+</body>
+</html>

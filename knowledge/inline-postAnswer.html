@@ -1,0 +1,26 @@
+<div class="add-answer-container" ng-hide="editMode"> 
+        <div class="input-btn add-btn" ng-click="edit()">
+                <img src="app_css/app_image/plus.svg" class="center">
+        </div>
+        <label class="quiz-infolabel-font change-position" >Atsakymo variantas</label>
+</div>
+
+<div ng-show="editMode">
+        <label class="quiz-infolabel-font" >Atsakymo variantas</label>
+        <div class="button-input-wrapper question-wrapper">
+                <input  class="name-and-description question-box" type="text" ng-model=model.Answer placeholder="Pavadinimas" >
+                <div class="input-btn remove-btn" ng-click="toDeleteAnswer(model.id)">
+                        <img src="app_css/app_image/minus.svg"  class="center">
+                </div>      
+                <label class="container-checkbox answer-checkbox input-text-font"><div class="is-correct-text">Teisingas</div> 
+                        <input type="checkbox" ng-model="model.Is_true" ng-true-value=1 ng-false-value=0>
+                        
+                        <span class="checkmark answer-checkmark"></span>
+                </label>
+        </div> 
+</div>
+
+<div>
+        <button ng-click="cancel()" ng-show="editMode">cancel</button>
+        <button ng-click="save()" ng-show="editMode">save</button>
+</div>
